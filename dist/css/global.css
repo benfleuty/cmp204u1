@@ -1,0 +1,40 @@
+body {
+  overflow: auto;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#contentWrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#contentWrapper > .row {
+  margin-top: 3rem;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer hr {
+  margin-top: 0;
+  border-width: 5px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .has-border-right {
+  border-right: 3px solid lightgrey;
+}
