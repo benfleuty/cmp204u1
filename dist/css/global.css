@@ -6,9 +6,12 @@ body {
   font-weight: bold;
 }
 
-#contentWrapper {
-  padding: 0 2rem;
+img {
   width: 100%;
+}
+
+#contentWrapper {
+  width: 60%;
   margin: auto;
   text-align: justify;
 }
