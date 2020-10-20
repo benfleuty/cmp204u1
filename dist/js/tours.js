@@ -43,7 +43,6 @@ $(window).on("load", function () {
   for (let i = 0; i < tours.length; i++) {
     // if odd number render image on left
     if (i % 2) {
-      console.log(typeof output);
       output =
         output +
         `
@@ -82,8 +81,6 @@ $(window).on("load", function () {
         </div>
       </div>
             `;
-
-      document.getElementById("dynamicContent").innerHTML = output;
     } else {
       output =
         output +
@@ -123,8 +120,8 @@ $(window).on("load", function () {
         </div>
       </div>
             `;
-
-      document.getElementById("dynamicContent").innerHTML = output;
     }
+    $("#dynamicContent").html(output);
+    // document.getElementById("dynamicContent").innerHTML = output;
   }
 });
