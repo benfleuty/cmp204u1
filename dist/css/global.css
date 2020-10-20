@@ -10,6 +10,10 @@ img {
   width: 100%;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
 #contentWrapper {
   width: 60%;
   margin: auto;

@@ -83,7 +83,7 @@ $(window).on("load", function () {
       </div>
             `;
 
-      document.getElementById("contentWrapper").innerHTML = output;
+      document.getElementById("dynamicContent").innerHTML = output;
     } else {
       output =
         output +
@@ -124,7 +124,7 @@ $(window).on("load", function () {
       </div>
             `;
 
-      document.getElementById("contentWrapper").innerHTML = output;
+      document.getElementById("dynamicContent").innerHTML = output;
     }
   }
 });
