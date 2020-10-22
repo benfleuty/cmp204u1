@@ -8,7 +8,7 @@ singyName.hidden = true;
 screamyName.hidden = true;
 rappyName.hidden = true;
 
-singyImg.addEventListener("mouseover", function (event) {
+singyImg.addEventListener("mouseover", function () {
   singyName.hidden = false;
 });
 
