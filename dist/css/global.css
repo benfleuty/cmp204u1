@@ -6,6 +6,11 @@ body {
   font-weight: bold;
 }
 
+.jumbotron {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -22,11 +27,6 @@ nav {
 
 #contentWrapper > .row {
   margin-top: 3rem;
-}
-
-.jumbotron {
-  margin-bottom: 0;
-  text-align: center;
 }
 
 footer {
