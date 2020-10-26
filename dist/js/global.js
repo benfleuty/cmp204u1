@@ -25,7 +25,7 @@ $(document).ready(function () {
       var hours = Math.floor(
         (deltaT % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      var days = Math.floor(deltaT % (1000 * 60 * 60 * 24));
+      var days = Math.floor(deltaT / (1000 * 60 * 60 * 24));
       /* Calculate individual units of time END */
       // Build the resultant string
 
