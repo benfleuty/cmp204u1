@@ -20,10 +20,12 @@ $(document).ready(function () {
       // calculates and stores the time between now and the release date
       var deltaT = releaseDateTimeTime - currentDateTime;
       /* Calculate individual units of time START */
-      var seconds = (deltaT % (1000 * 60)) / 1000;
-      var minutes = (deltaT % (1000 * 60 * 60)) / (1000 * 60);
-      var hours = (deltaT % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
-      var days = deltaT % (1000 * 60 * 60 * 24);
+      var seconds = Math.floor((deltaT % (1000 * 60)) / 1000);
+      var minutes = Math.floor((deltaT % (1000 * 60 * 60)) / (1000 * 60));
+      var hours = Math.floor(
+        (deltaT % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var days = Math.floor(deltaT % (1000 * 60 * 60 * 24));
       /* Calculate individual units of time END */
       // Build the resultant string
 
