@@ -31,13 +31,13 @@ $(document).ready(function () {
 
       var output =
         days +
-        "days, " +
+        " days, " +
         hours +
-        "hours, " +
+        " hours, " +
         minutes +
-        "minutes, " +
+        " minutes, " +
         seconds +
-        "seconds ";
+        " seconds!";
 
       document.getElementById("newAlbumReleaseTimer").innerHTML = output;
 
