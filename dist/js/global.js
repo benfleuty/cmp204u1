@@ -39,6 +39,12 @@ $(document).ready(function () {
 
       document.getElementById("newAlbumReleaseTimer").innerHTML = output;
 
+      if (deltaT > 0) return;
+
+      clearInterval();
+      document.getElementById("announcementBanner").innerHTML =
+        "<strong>We have released our new album <em>new album name</em>!</strong>";
+
       //
     }, 1000);
   }
@@ -66,11 +72,6 @@ $(document).ready(function () {
       days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
     // If the count down is finished, write some text
-    if (difference <= 0) {
-      clearInterval(generateTimer);
-      document.getElementById("newAlbumReleaseTimer").innerHTML =
-        "NEW ALBUM RELEASED";
-    }
   }, 1000);*/
   /////////////////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////////////////
