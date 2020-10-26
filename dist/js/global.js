@@ -20,6 +20,7 @@ $(document).ready(function () {
       // calculates and stores the time between now and the release date
       var deltaT = releaseDateTimeTime - currentDateTime;
       /* Calculate individual units of time START */
+      // math.floor requried as decimals are produced without it
       var seconds = Math.floor((deltaT % (1000 * 60)) / 1000);
       var minutes = Math.floor((deltaT % (1000 * 60 * 60)) / (1000 * 60));
       var hours = Math.floor(
@@ -28,7 +29,6 @@ $(document).ready(function () {
       var days = Math.floor(deltaT / (1000 * 60 * 60 * 24));
       /* Calculate individual units of time END */
       // Build the resultant string
-
       var output =
         days +
         " days, " +
@@ -39,15 +39,16 @@ $(document).ready(function () {
         seconds +
         " seconds!";
 
+      // output the time remaining
       document.getElementById("newAlbumReleaseTimer").innerHTML = output;
-
+      // if the date has not passed, end the funciton
       if (deltaT > 0) return;
 
+      // stop the interval to end the script
       clearInterval();
+      // change the announcement banner
       document.getElementById("announcementBanner").innerHTML =
         "<strong>We have released our new album <em>new album name</em>!</strong>";
-
-      //
     }, 1000);
   }
 
